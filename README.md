@@ -1,4 +1,4 @@
-# portScanner v1
+# portScanner v1.1
 Python ile yazılmış port tarama programı
 
 ## Tarama seçenekleri
