@@ -34,9 +34,9 @@ while True:
         hostname = socket.gethostbyaddr(str(target))
 
         print(
-            bcolors.OKBLUE + "\n[ 1 ]" + bcolors.ENDC + " Check single port\n" +
-            bcolors.OKBLUE + "[ 2 ]" + bcolors.ENDC + " Check multiple port\n" +
-            bcolors.OKBLUE + "[ 3 ]" + bcolors.ENDC + " Check most used ports\n"
+            bcolors.OKBLUE + "\n[ 1 ]" + bcolors.ENDC + " Scan single port\n" +
+            bcolors.OKBLUE + "[ 2 ]" + bcolors.ENDC + " Scan multiple port\n" +
+            bcolors.OKBLUE + "[ 3 ]" + bcolors.ENDC + " Scan most used ports\n"
         )
         type = int(input(bcolors.WARNING + "> " + bcolors.ENDC + "Select scan type: "))
 
@@ -46,7 +46,7 @@ while True:
             start = int(input(bcolors.WARNING + "> " + bcolors.ENDC + "Select start port: "))
             end = int(input(bcolors.WARNING + "> " + bcolors.ENDC + "Select end port: "))
         elif type == 3:
-            port = (21, 22, 23, 25, 53, 80, 110, 139, 143, 443, 445, 1433, 1521, 2082, 2083, 2086, 2087, 3306, 3389, 8443, 8447, 8880)
+            port = (21, 22, 23, 25, 53, 80, 110, 139, 143, 443, 445, 1433, 1521, 2082, 2083, 2086, 2087, 2222, 3306, 3389, 7080, 8083, 8090, 8443, 8447, 8880, 10000)
         else:
             print(bcolors.FAIL + "Type is not selected, program exited." + bcolors.ENDC)
             sys.exit()
@@ -59,7 +59,7 @@ while True:
         elif type == 2:
             print(bcolors.WARNING + "[ " + str(start) + "-" + str(end) + " ]" + bcolors.ENDC + " selected ports.")
         else:
-            print(bcolors.WARNING + "[ 21, 22, 23, 25, 53, 80, 110, 139, 143, 443, 445, 1433, 1521, 2082, 2083, 2086, 2087, 3306, 3389, 8443, 8447, 8880 ]" + bcolors.ENDC + " selected ports.")
+            print(bcolors.WARNING + "[ 21, 22, 23, 25, 53, 80, 110, 139, 143, 443, 445, 1433, 1521, 2082, 2083, 2086, 2087, 2222, 3306, 3389, 7080, 8083, 8090, 8443, 8447, 8880, 10000 ]" + bcolors.ENDC + " selected ports.")
         print(bcolors.WARNING + "[ " + str(target) + " ] " + bcolors.ENDC + "selected ip.")
         print(bcolors.WARNING + "[ " + str(hostname[0]) + " ] " + bcolors.ENDC + "hostname.")
         print("▬" * 20)
