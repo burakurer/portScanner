@@ -20,7 +20,7 @@ class config:
 
 openport = []
 
-print(bcolors.WARNING + pyfiglet.figlet_format("Port Scanner v1", font="rectangles") + bcolors.ENDC)
+print(bcolors.WARNING + pyfiglet.figlet_format("Port Scanner v1.1", font="rectangles") + bcolors.ENDC)
 
 while True:
     print(bcolors.OKBLUE + "[ NEW SCAN ]\n" + bcolors.ENDC)
